@@ -16,13 +16,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean compile'
-            }
-        }
-
-        stage('Install Playwright Browsers') {
-            steps {
-                bat 'mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"'
+                bat '''
+                        cd seleniumplaywright
+                        mvn clean test
+                        '''
             }
         }
 

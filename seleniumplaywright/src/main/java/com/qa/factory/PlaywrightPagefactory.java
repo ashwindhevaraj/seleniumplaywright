@@ -43,19 +43,19 @@ public class PlaywrightPagefactory {
 		switch(browsername.toLowerCase()) {
 		case "chromium":
 			//browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
-			tlbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tlbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true)));
 			break;
 		case "firefox":
 			//browser=playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
-			tlbrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tlbrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(true)));
 			break;
 		case "safari":
 			//browser=playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
-			tlbrowser.set(getPlaywright().webkit().launch(new BrowserType.LaunchOptions().setHeadless(false)));
+			tlbrowser.set(getPlaywright().webkit().launch(new BrowserType.LaunchOptions().setHeadless(true)));
 			break;
 		case "chrome":
 			//browser=playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
-			tlbrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
+			tlbrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(true)));
 			break;
 			
 		default:

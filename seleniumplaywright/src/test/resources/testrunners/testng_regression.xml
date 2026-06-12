@@ -13,6 +13,7 @@
 <test name="Dashboard page validations">
 <classes>
 <class name="com.qa.Testcases.Dashboardtest"/>
+<class name="com.qa.Testcases.AdminpageTest"/>
 </classes>
 </test>
 </suite>

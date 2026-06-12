@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Orange HRM report creation by Ash</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 9, 2026 07:57:07 am</span></a>
+<a href="#"><span class="badge badge-primary">Jun 11, 2026 10:37:15 am</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +85,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">HomepageTest</a><a class="dropdown-item" href="#">Dashboardtest</a><a class="dropdown-item" href="#">Seleniumplaywrightvalidations</a>
+<a class="dropdown-item" href="#">Dashboardtest</a><a class="dropdown-item" href="#">HomepageTest</a><a class="dropdown-item" href="#">AdminpageTest</a><a class="dropdown-item" href="#">Seleniumplaywrightvalidations</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +93,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="Dashboardtest Seleniumplaywrightvalidations"
+          tag="HomepageTest Seleniumplaywrightvalidations"
           device="">
           <div class="test-detail">
-            <p class="name">dashboardtest1</p>
+            <p class="name">firsttest</p>
             <p class="text-sm">
-              <span>7:57:36 am</span> / <span>00:00:04:024</span>
+              <span>10:37:50 am</span> / <span>00:00:00:136</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,16 +106,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">dashboardtest1</h5>
-<span class='badge badge-success'>06.09.2026 7:57:36 am</span>
-<span class='badge badge-danger'>06.09.2026 7:57:40 am</span>
-<span class='badge badge-default'>00:00:04:024</span>
+<h5 class="test-status text-pass">firsttest</h5>
+<span class='badge badge-success'>06.11.2026 10:37:50 am</span>
+<span class='badge badge-danger'>06.11.2026 10:37:50 am</span>
+<span class='badge badge-default'>00:00:00:136</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Dashboardtest</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">HomepageTest</span>
 <span class="badge badge-pill badge-default">Seleniumplaywrightvalidations</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -119,7 +125,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:57:40 am</td>
+        <td>10:37:50 am</td>
         <td>
           Test Passed
         </td>
@@ -134,9 +140,9 @@
           tag="HomepageTest Seleniumplaywrightvalidations"
           device="">
           <div class="test-detail">
-            <p class="name">firsttest</p>
+            <p class="name">secondtest</p>
             <p class="text-sm">
-              <span>7:57:36 am</span> / <span>00:00:00:026</span>
+              <span>10:37:50 am</span> / <span>00:00:00:159</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -144,10 +150,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">firsttest</h5>
-<span class='badge badge-success'>06.09.2026 7:57:36 am</span>
-<span class='badge badge-danger'>06.09.2026 7:57:36 am</span>
-<span class='badge badge-default'>00:00:00:026</span>
+<h5 class="test-status text-pass">secondtest</h5>
+<span class='badge badge-success'>06.11.2026 10:37:50 am</span>
+<span class='badge badge-danger'>06.11.2026 10:37:50 am</span>
+<span class='badge badge-default'>00:00:00:159</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -163,7 +169,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:57:36 am</td>
+        <td>10:37:50 am</td>
         <td>
           Test Passed
         </td>
@@ -178,9 +184,9 @@
           tag="HomepageTest Seleniumplaywrightvalidations"
           device="">
           <div class="test-detail">
-            <p class="name">secondtest</p>
+            <p class="name">thirdtest</p>
             <p class="text-sm">
-              <span>7:57:36 am</span> / <span>00:00:00:011</span>
+              <span>10:37:50 am</span> / <span>00:00:01:903</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -188,10 +194,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">secondtest</h5>
-<span class='badge badge-success'>06.09.2026 7:57:36 am</span>
-<span class='badge badge-danger'>06.09.2026 7:57:36 am</span>
-<span class='badge badge-default'>00:00:00:011</span>
+<h5 class="test-status text-pass">thirdtest</h5>
+<span class='badge badge-success'>06.11.2026 10:37:50 am</span>
+<span class='badge badge-danger'>06.11.2026 10:37:52 am</span>
+<span class='badge badge-default'>00:00:01:903</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -207,7 +213,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:57:36 am</td>
+        <td>10:37:52 am</td>
         <td>
           Test Passed
         </td>
@@ -219,12 +225,12 @@
         </li>
         <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag="HomepageTest Seleniumplaywrightvalidations"
+          tag="Dashboardtest Seleniumplaywrightvalidations"
           device="">
           <div class="test-detail">
-            <p class="name">thirdtest</p>
+            <p class="name">dashboardtest1</p>
             <p class="text-sm">
-              <span>7:57:36 am</span> / <span>00:00:01:952</span>
+              <span>10:38:02 am</span> / <span>00:00:04:089</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -232,16 +238,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">thirdtest</h5>
-<span class='badge badge-success'>06.09.2026 7:57:36 am</span>
-<span class='badge badge-danger'>06.09.2026 7:57:38 am</span>
-<span class='badge badge-default'>00:00:01:952</span>
+<h5 class="test-status text-pass">dashboardtest1</h5>
+<span class='badge badge-success'>06.11.2026 10:38:02 am</span>
+<span class='badge badge-danger'>06.11.2026 10:38:06 am</span>
+<span class='badge badge-default'>00:00:04:089</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">HomepageTest</span>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Dashboardtest</span>
 <span class="badge badge-pill badge-default">Seleniumplaywrightvalidations</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -251,9 +257,84 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>7:57:38 am</td>
+        <td>10:38:06 am</td>
         <td>
           Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag="AdminpageTest Seleniumplaywrightvalidations"
+          device="">
+          <div class="test-detail">
+            <p class="name">adminpagetest</p>
+            <p class="text-sm">
+              <span>10:38:06 am</span> / <span>00:00:00:016</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">adminpagetest</h5>
+<span class='badge badge-success'>06.11.2026 10:38:06 am</span>
+<span class='badge badge-danger'>06.11.2026 10:38:06 am</span>
+<span class='badge badge-default'>00:00:00:016</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AdminpageTest</span>
+<span class="badge badge-pill badge-default">Seleniumplaywrightvalidations</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:38:06 am</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at com.qa.Testcases.AdminpageTest.adminpagetest(AdminpageTest.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='C:\Users\dyens\git\seleniumplaywright\seleniumplaywright/screenshot/1781154486759.png' src="C:\Users\dyens\git\seleniumplaywright\seleniumplaywright/screenshot/1781154486759.png">
+  
+    
+
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -270,26 +351,26 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">HomepageTest</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>HomepageTest</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -300,31 +381,33 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:38:06 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>firsttest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>secondtest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>thirdtest</a>
+<a href="#" class="linked" test-id='5' id='5'>adminpagetest</a>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -349,9 +432,9 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
+<td>10:38:02 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>dashboardtest1</a>
+<a href="#" class="linked" test-id='4' id='4'>dashboardtest1</a>
 </td>
 </tr>
 </tbody>
@@ -361,15 +444,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
+<span class='badge log pass-bg'>3</span>
 </span>
-<p class="name">Seleniumplaywrightvalidations</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">HomepageTest</p>
+<p class="duration text-sm">3 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Seleniumplaywrightvalidations</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
+<h4>HomepageTest</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -382,30 +465,119 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
+<td>10:37:50 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>dashboardtest1</a>
+<a href="#" class="linked" test-id='1' id='1'>firsttest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
+<td>10:37:50 am</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>firsttest</a>
+<a href="#" class="linked" test-id='2' id='2'>secondtest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
+<td>10:37:50 am</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>secondtest</a>
+<a href="#" class="linked" test-id='3' id='3'>thirdtest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">AdminpageTest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>AdminpageTest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:38:06 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>adminpagetest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Seleniumplaywrightvalidations</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Seleniumplaywrightvalidations</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:37:50 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>firsttest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>07:57:36 am</td>
+<td>10:37:50 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>thirdtest</a>
+<a href="#" class="linked" test-id='2' id='2'>secondtest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:37:50 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>thirdtest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>10:38:02 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>dashboardtest1</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:38:06 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>adminpagetest</a>
 </td>
 </tr>
 </tbody>
@@ -425,13 +597,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 9, 2026 07:57:07 am</h3>
+<h3>Jun 11, 2026 10:37:15 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 9, 2026 07:57:41 am</h3>
+<h3>Jun 11, 2026 10:38:07 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -443,7 +615,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -459,12 +631,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
+<div><small data-tooltip='80%'>
 <b>4</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='20%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -482,9 +654,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='80%'><b>4</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='20%'><b>1</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -501,7 +673,7 @@
 </div></div>
 <script>
 var timeline = {
-"dashboardtest1":4.024,"firsttest":0.026,"secondtest":0.011,"thirdtest":1.952
+"firsttest":0.136,"secondtest":0.159,"thirdtest":1.903,"dashboardtest1":4.089,"adminpagetest":0.016
 };
 </script>
 <div class="row">
@@ -511,14 +683,6 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>HomepageTest</td>
-<td>3</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>Dashboardtest</td>
 <td>1</td>
 <td>0</td>
@@ -527,12 +691,28 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>Seleniumplaywrightvalidations</td>
-<td>4</td>
+<td>HomepageTest</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
+</tr>
+<tr>
+<td>AdminpageTest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Seleniumplaywrightvalidations</td>
+<td>4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>80%</td>
 </tr>
 </tbody>
 </table></div>
@@ -570,7 +750,7 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 4,
-failParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -587,7 +767,7 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 4,
-failEvents: 0,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

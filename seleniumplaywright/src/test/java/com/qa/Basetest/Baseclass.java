@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.microsoft.playwright.Page;
 import com.qa.factory.PlaywrightPagefactory;
+import com.qa.pages.Adminpage;
 import com.qa.pages.Dashboardpage;
 import com.qa.pages.Homepage;
 
@@ -16,6 +17,7 @@ public class Baseclass {
 	protected Homepage hmpage;
 	protected Properties prop;
 	protected Dashboardpage dashpage;
+	protected Adminpage admpage;
 	@BeforeTest
 	public void setup() {
 		pf=new PlaywrightPagefactory();

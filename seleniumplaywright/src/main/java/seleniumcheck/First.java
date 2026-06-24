@@ -1,6 +1,7 @@
 package seleniumcheck;
 
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.regex.Pattern;
 
 import com.microsoft.playwright.Browser;
@@ -65,7 +66,7 @@ public class First {
 		    		  .setScreenshots(true)
 		    		  .setSnapshots(true)
 		    		  .setSources(true));
-		      // lesson 1 alert handled
+		      // class 1 alert handled
 		      /*p2.onDialog(dialog->{
 		      System.out.println(dialog.message());
 		      dialog.dismiss();
@@ -118,14 +119,80 @@ public class First {
 		      System.out.println(p2.frameLocator("xpath=//frame[@name='frame-top']").frameLocator("xpath=//frame[@name='frame-middle']").locator("#content").innerText());*/
 		      
 		      //class 7 dropdown 
-		      p2.navigate("https://the-internet.herokuapp.com/dropdown");
+		      /*p2.navigate("https://the-internet.herokuapp.com/dropdown");
 		      p2.locator("#dropdown").selectOption(new SelectOption().setLabel("Option 1"));
-		      System.out.println(p2.locator("#dropdown").inputValue());
+		      System.out.println(p2.locator("#dropdown").inputValue());*/
+		      
+		      //class 8 dynamic content in web application
+		      /*p2.navigate("https://the-internet.herokuapp.com/dynamic_content");
+		      Locator l1=p2.locator("//div[@id='content' and contains(@class,'large-10')]//div[@class='large-10 columns']");
+		      for(int i=0;i<l1.count();i++) {
+		    	  System.out.println(l1.nth(i).textContent());
+		      }*/
+		      //class 9 - blocking ads in page
+		      p2.route("**/*", route -> {
+
+		    	    String url = route.request().url();
+		    	    if (url.contains("cookie") ||
+		    	        url.contains("banner") ||
+		    	        url.contains("newsletter")) {
+
+		    	        route.abort();
+
+		    	    } else {
+
+		    	        route.resume();
+		    	    }
+
+		    	});
+		      //class 10 mouse hover
+		      /*p2.navigate("https://the-internet.herokuapp.com/hovers");
+		      Locator l2=p2.locator("xpath=//img[@alt='User Avatar']");
+		      for(int i=0;i<l2.count();i++) {
+		    	  l2.nth(i).hover();
+		    	  System.out.println(l2.nth(i).innerText());
+		      }*/
+		      
+		      //class 11 window handler in playwright
+		      /*p2.navigate("https://the-internet.herokuapp.com/windows");
+		      Page p3=context1.waitForPage(()->{
+		    	  p2.locator("xpath=//a[text()='Click Here']").click();
+		      });
+		      String k=p3.locator("xpath=//div[@class='example']").innerText();
+		      System.out.println(k);*/
+		      
+		      //class 12 table learned part 2- getting values of column amet
+		      /*p2.navigate("https://the-internet.herokuapp.com/challenging_dom");
+		      List<String> headerdata= p2.locator("table thead th").allTextContents();
+		      int checkheader = headerdata.indexOf("Amet");
+		      System.out.println(checkheader); //4
+		      Locator rows= p2.locator("table tbody tr");
+		      boolean found=false;
+		      for(int i=0;i<rows.count();i++) {
+		    	  String contactdata = rows.nth(i).locator("td:nth-child("+(checkheader+1)+")").textContent().trim();
+		    	  if(contactdata.equals("Consequuntur1")) {
+		    		  found=true;
+		    		  System.out.println("found at row "+(i+1));
+		    		  break;
+		    	  }
+		      }*/
+		      //class 13 storage of login and reusing
+		      p2.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		      p2.locator("[placeholder='Username']").fill("Admin");
+		      p2.locator("[placeholder='Password']").fill("admin123");
+		      p2.locator("[type='submit']").click();
+		      context1.storageState(new BrowserContext.StorageStateOptions().setPath(Paths.get("applogin.json")));
+		      
+		      BrowserContext newcontext2=browser.newContext(new Browser.NewContextOptions().setStorageStatePath(Paths.get("applogin.json")));
+		      Page p3= newcontext2.newPage();
+		      p3.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+		      p3.locator("[href='/web/index.php/leave/viewLeaveModule']").click();
 		      
 		    //placing this line will get closing screenshot scope upto this point
 		      // go trace.playwright.dev - you will find the way to upload file- upload this trace.zip under workspace
 		      context1.tracing().stop(new Tracing.StopOptions()
 		    		  .setPath(Paths.get("trace.zip")));
+		      
 		      
 		      //p2.navigate("https://www.amazon.com");
 		      //Locator v1=p2.locator("div.navFooterLinkCol:has(a[href='https://www.amazon.jobs'])");

@@ -1,11 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T22:42:05 IST" name="Selenium playwright validations" finished-at="2026-06-18T22:42:05 IST" duration-ms="28">
+  <suite started-at="2026-06-24T21:50:52 IST" name="Selenium playwright validations" finished-at="2026-06-24T21:51:37 IST" duration-ms="44649">
     <groups>
     </groups>
-    <test started-at="2026-06-18T22:42:05 IST" name="playwright learnings" finished-at="2026-06-18T22:42:05 IST" duration-ms="28">
-    </test> <!-- playwright learnings -->
+    <test started-at="2026-06-24T21:50:52 IST" name="Dashboard page validations" finished-at="2026-06-24T21:51:34 IST" duration-ms="41991">
+      <class name="com.qa.Testcases.Dashboardtest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.Testcases.Dashboardtest@9cb8225]" started-at="2026-06-24T21:50:52 IST" name="setup" finished-at="2026-06-24T21:51:24 IST" duration-ms="31604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dashboardtest1()[pri:0, instance:com.qa.Testcases.Dashboardtest@9cb8225]" started-at="2026-06-24T21:51:24 IST" name="dashboardtest1" finished-at="2026-06-24T21:51:30 IST" duration-ms="6093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashboardtest1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.Testcases.Dashboardtest@9cb8225]" started-at="2026-06-24T21:51:31 IST" name="teardown" finished-at="2026-06-24T21:51:34 IST" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.Testcases.Dashboardtest -->
+      <class name="com.qa.Testcases.AdminpageTest">
+        <test-method signature="adminpagetest()[pri:0, instance:com.qa.Testcases.AdminpageTest@76b07f29]" started-at="2026-06-24T21:51:30 IST" name="adminpagetest" finished-at="2026-06-24T21:51:30 IST" duration-ms="59" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+at com.qa.Testcases.AdminpageTest.adminpagetest(AdminpageTest.java:10)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminpagetest -->
+      </class> <!-- com.qa.Testcases.AdminpageTest -->
+    </test> <!-- Dashboard page validations -->
+    <test started-at="2026-06-24T21:50:52 IST" name="Playwright in chromebrowser" finished-at="2026-06-24T21:51:37 IST" duration-ms="44649">
+      <class name="com.qa.Testcases.HomepageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.Testcases.HomepageTest@6f36c2f0]" started-at="2026-06-24T21:50:52 IST" name="setup" finished-at="2026-06-24T21:51:30 IST" duration-ms="37957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="firsttest()[pri:0, instance:com.qa.Testcases.HomepageTest@6f36c2f0]" started-at="2026-06-24T21:51:30 IST" name="firsttest" finished-at="2026-06-24T21:51:30 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firsttest -->
+        <test-method signature="secondtest()[pri:0, instance:com.qa.Testcases.HomepageTest@6f36c2f0]" started-at="2026-06-24T21:51:30 IST" name="secondtest" finished-at="2026-06-24T21:51:31 IST" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondtest -->
+        <test-method signature="thirdtest()[pri:0, instance:com.qa.Testcases.HomepageTest@6f36c2f0]" started-at="2026-06-24T21:51:31 IST" name="thirdtest" finished-at="2026-06-24T21:51:35 IST" duration-ms="4020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdtest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.qa.Testcases.HomepageTest@6f36c2f0]" started-at="2026-06-24T21:51:36 IST" name="teardown" finished-at="2026-06-24T21:51:37 IST" duration-ms="976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.qa.Testcases.HomepageTest -->
+    </test> <!-- Playwright in chromebrowser -->
   </suite> <!-- Selenium playwright validations -->
 </testng-results>

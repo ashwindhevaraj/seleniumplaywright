@@ -10,6 +10,7 @@ import com.qa.factory.PlaywrightPagefactory;
 import com.qa.pages.Adminpage;
 import com.qa.pages.Dashboardpage;
 import com.qa.pages.Homepage;
+import org.testng.annotations.Parameters;
 
 public class Baseclass {
 	PlaywrightPagefactory pf;
@@ -18,10 +19,16 @@ public class Baseclass {
 	protected Properties prop;
 	protected Dashboardpage dashpage;
 	protected Adminpage admpage;
+	
+	
+	@Parameters({ "browser" })
 	@BeforeTest
-	public void setup() {
+	public void setup(String browsername) {
 		pf=new PlaywrightPagefactory();
 		prop=pf.init_prop();
+		if(browsername!=null) {
+			prop.setProperty("browser", browsername);
+		}
 		page=pf.initbrowser(prop);
 		hmpage=new Homepage(page);
 	}

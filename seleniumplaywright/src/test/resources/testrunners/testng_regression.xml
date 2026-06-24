@@ -5,15 +5,29 @@
 <listeners>
   <listener class-name="com.qa.listener.Extendreportlistener"/>
 </listeners>
+
 <test name="Playwright in chromebrowser">
+<parameter name="browser" value="chrome"/>
 <classes>
 <class name="com.qa.Testcases.HomepageTest"/>
 </classes>
 </test>
 <test name="Dashboard page validations">
+<parameter name="browser" value="chrome"></parameter>
 <classes>
 <class name="com.qa.Testcases.Dashboardtest"/>
-<class name="com.qa.Testcases.AdminpageTest"/>
+</classes>
+</test>
+<test name="Playwright in firefox browser">
+<parameter name="browser" value="firefox"/>
+<classes>
+<class name="com.qa.Testcases.HomepageTest"/>
+</classes>
+</test>
+<test name="Playwright in chromiumbrowser">
+<parameter name="browser" value="chromium"/>
+<classes>
+<class name="com.qa.Testcases.HomepageTest"/>
 </classes>
 </test>
 </suite>

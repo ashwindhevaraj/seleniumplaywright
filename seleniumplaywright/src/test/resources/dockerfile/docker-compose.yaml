@@ -2,8 +2,8 @@
 # Add the `-d` flag at the end for detached execution
 # To stop the execution, hit Ctrl+C, and then `docker compose -f docker-compose-v3-beta-channel.yml down`
 
-# docker-compose -d up - will run
-#docker-compose down - will shutdown
+# docker-compose up -d ------- go that folder directory and hit this command -will run docker in local
+#docker-compose down - will shutdown after we ran tc
 services:
   chrome:
     image: selenium/node-chrome:beta

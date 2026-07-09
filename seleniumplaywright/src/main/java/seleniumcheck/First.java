@@ -66,6 +66,11 @@ public class First {
 		    		  .setScreenshots(true)
 		    		  .setSnapshots(true)
 		    		  .setSources(true));
+		      
+		      // log to be printed in console
+		      p2.onConsoleMessage(msg->{
+		    	  System.out.println(msg.text());
+		      });
 		      // class 1 alert handled
 		      /*p2.onDialog(dialog->{
 		      System.out.println(dialog.message());
@@ -122,6 +127,11 @@ public class First {
 		      /*p2.navigate("https://the-internet.herokuapp.com/dropdown");
 		      p2.locator("#dropdown").selectOption(new SelectOption().setLabel("Option 1"));
 		      System.out.println(p2.locator("#dropdown").inputValue());*/
+		      //Locator dropdown = page.locator("#country");
+		      //dropdown.selectOption("IN");
+		      //dropdown.selectOption(new SelectOption().setLabel("India"));
+		      //dropdown.selectOption(new SelectOption().setIndex(2));
+		      //dropdown.selectOption(new String[]{"India","USA"}); multiple select options
 		      
 		      //class 8 dynamic content in web application
 		      /*p2.navigate("https://the-internet.herokuapp.com/dynamic_content");
@@ -177,7 +187,7 @@ public class First {
 		    	  }
 		      }*/
 		      //class 13 storage of login and reusing
-		      p2.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		      /*p2.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		      p2.locator("[placeholder='Username']").fill("Admin");
 		      p2.locator("[placeholder='Password']").fill("admin123");
 		      p2.locator("[type='submit']").click();
@@ -186,7 +196,18 @@ public class First {
 		      BrowserContext newcontext2=browser.newContext(new Browser.NewContextOptions().setStorageStatePath(Paths.get("applogin.json")));
 		      Page p3= newcontext2.newPage();
 		      p3.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
-		      p3.locator("[href='/web/index.php/leave/viewLeaveModule']").click();
+		      p3.locator("[href='/web/index.php/leave/viewLeaveModule']").click();*/
+		      
+		      //class 14 scroll in playwright
+		      /*p2.navigate("https://the-internet.herokuapp.com");
+		      p2.locator("xpath=//a[text()='WYSIWYG Editor']").scrollIntoViewIfNeeded();*/
+		      
+		      //class 15 pressing shift keys in playwright
+		      p2.navigate("https://the-internet.herokuapp.com/key_presses");
+		      p2.locator("#target").click();
+		      p2.keyboard().down("Shift");
+		      p2.keyboard().type("testing");
+		      p2.keyboard().up("Shift");
 		      
 		    //placing this line will get closing screenshot scope upto this point
 		      // go trace.playwright.dev - you will find the way to upload file- upload this trace.zip under workspace
